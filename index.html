@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>V25 موريتانيا سياحة 🇲🇷</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V26 موريتانيا سياحة 🇲🇷</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:system-ui,sans-serif;background:#0f172a;color:#fff;min-height:100vh}
-.header{background:linear-gradient(90deg,#1e3a8a,#0f172a);padding:15px;text-align:center;position:sticky;top:0;z-index:20}
-.header h1{font-size:22px;margin-bottom:12px}.langs{display:flex;gap:10px;justify-content:center}
-.langs button{padding:8px 22px;border-radius:20px;border:2px solid #60a5fa;background:transparent;color:#fff;cursor:pointer;font-weight:bold}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,sans-serif;background:#0f172a;color:#fff;min-height:100vh}
+.header{background:linear-gradient(90deg,#1e3a8a,#0f172a);padding:16px;text-align:center;position:sticky;top:0;z-index:20}
+.header h1{font-size:23px;margin-bottom:12px}
+.langs{display:flex;gap:12px;justify-content:center}
+.langs button{padding:9px 24px;border-radius:22px;border:2px solid #60a5fa;background:transparent;color:#fff;cursor:pointer;font-weight:bold;font-size:15px}
 .langs button.active{background:#38bdf8;color:#0f172a;border-color:#38bdf8}
-.container{max-width:1000px;margin:0 auto;padding:20px}.hero{font-size:28px;text-align:center;padding:30px 10px;color:#38bdf8;font-weight:bold}
+.container{max-width:1050px;margin:0 auto;padding:20px}
+.hero{font-size:29px;text-align:center;padding:30px 10px;color:#38bdf8;font-weight:bold;line-height:1.4}
 .card{background:#1e293b;border-radius:18px;padding:20px;margin:18px 0;border:1px solid #334155}
-.card h2{color:#38bdf8;margin-bottom:14px;font-size:19px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.card h2{color:#38bdf8;margin-bottom:14px;font-size:19px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
 .badge{background:#0f172a;padding:14px;border-radius:12px;text-align:center;border:1px solid #334155}
-.badge span{display:block;color:#94a3b8;font-size:12px;margin-bottom:4px}.badge strong{font-size:16px;color:#38bdf8}
-.counter{background:linear-gradient(135deg,#1e3a8a,#38bdf8);padding:25px;border-radius:18px;text-align:center}
-.counter .num{font-size:50px;font-weight:900}
+.badge span{display:block;color:#94a3b8;font-size:12px;margin-bottom:5px}
+.badge strong{font-size:16px;color:#38bdf8}
+.counter{background:linear-gradient(135deg,#1e3a8a,#38bdf8);padding:28px;border-radius:20px;text-align:center;box-shadow:0 10px 40px rgba(56,189,248,.3)}
+.counter .num{font-size:52px;font-weight:900;letter-spacing:2px}
 </style>
 </head>
 <body>
 <div class="header">
-<h1 id="title">🇲🇷 V25 موريتانيا سياحة</h1>
+<h1 id="title">🇲🇷 V26 موريتانيا سياحة</h1>
 <div class="langs">
 <button onclick="setLang('ar')" id="btn-ar" class="active">العربية</button>
 <button onclick="setLang('en')" id="btn-en">English</button>
 </div>
 </div>
-<div class="container">
-<div class="hero" id="welcome">أهلاً وسهلاً بكم في موريتانيا</div>
 
-<!-- العداد الأول المميز -->
+<div class="container">
+<div class="hero" id="welcome">أهلاً وسهلاً بكم في موريتانيا - أرض المليون شاعر</div>
+
+<!-- العداد المميز الأول -->
 <div class="counter">
-<h3 id="c-title">🔥 العداد المميز</h3>
+<h3 id="c-title" style="font-size:22px;margin-bottom:10px">🔥 العداد المميز</h3>
 <div class="num" id="visitors">0</div>
-<div style="display:flex;gap:10px;justify-content:center;margin-top:15px;flex-wrap:wrap">
-<div style="background:rgba(0,0,0,.35);padding:8px 14px;border-radius:20px"><span id="l-today">اليوم:</span> <b id="today">0</b></div>
-<div style="background:rgba(0,0,0,.35);padding:8px 14px;border-radius:20px"><span id="l-online">متصل:</span> <b id="online">0</b></div>
+<div style="display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap">
+<div style="background:rgba(0,0,0,.35);padding:8px 16px;border-radius:20px"><span id="l-today">اليوم:</span> <b id="today">0</b></div>
+<div style="background:rgba(0,0,0,.35);padding:8px 16px;border-radius:20px"><span id="l-online">متصل:</span> <b id="online">0</b></div>
+<div style="background:rgba(0,0,0,.35);padding:8px 16px;border-radius:20px">🇲🇷 <span id="l-from">نواكشوط</span></div>
 </div>
-<div class="grid" style="margin-top:18px">
-<div class="badge"><span id="l-time-mr">وقت موريتانيا</span><strong id="time-mr">...</strong></div>
-<div class="badge"><span id="l-time-out">الوقت الخارجي</span><strong id="time-out">...</strong></div>
+<div class="grid" style="margin-top:20px">
+<div class="badge"><span id="l-time-mr">وقت موريتانيا</span><strong id="time-mr">--:--:--</strong></div>
+<div class="badge"><span id="l-time-out">الوقت الخارجي (باريس)</span><strong id="time-out">--:--:--</strong></div>
 <div class="badge"><span id="l-date">التاريخ</span><strong id="date-now">...</strong></div>
 <div class="badge"><span>IP</span><strong id="ip">...</strong></div>
 <div class="badge"><span id="l-city">المدينة</span><strong id="city">...</strong></div>
@@ -47,81 +55,91 @@
 </div>
 </div>
 
-<div class="card"><h2>🌤️ <span id="w-title">الجو والطقس</span></h2><div class="grid">
+<div class="card"><h2>🌤️ <span id="w-title">الجو والطقس</span></h2>
+<div class="grid">
 <div class="badge"><strong id="w1">نواكشوط 28° ☀️</strong><span id="w1d">مشمس - رطب</span></div>
 <div class="badge"><strong id="w2">أطار 35° 🌵</strong><span id="w2d">صحراوي حار نهاراً</span></div>
 <div class="badge"><strong id="w3">نواذيبو 24° 🌊</strong><span id="w3d">معتدل - رياح</span></div>
 </div></div>
 
-<div class="card"><h2>📍 <span id="places-title">المدن السياحية</span></h2><div class="grid">
+<div class="card"><h2>📍 <span id="places-title">المدن السياحية</span></h2>
+<div class="grid">
 <div class="badge"><strong id="p1">شنقيط</strong><span id="p1d">مدينة التراث العالمي</span></div>
 <div class="badge"><strong id="p2">وادان</strong><span id="p2d">قلعة الصحراء التاريخية</span></div>
 <div class="badge"><strong id="p3">تيرجيت</strong><span id="p3d">واحة العيون والنخيل</span></div>
 <div class="badge"><strong id="p4">بنك آرغين</strong><span id="p4d">محمية الطيور العالمية</span></div>
 <div class="badge"><strong id="p5">أطار</strong><span id="p5d">بوابة آدرار</span></div>
-<div class="badge"><strong id="p6">نواذيبو</strong><span id="p6d">عاصمة الأسماك</span></div>
+<div class="badge"><strong id="p6">نواذيبو</strong><span id="p6d">عاصمة الأسماك والشواطئ</span></div>
 </div></div>
 
-<div class="card"><h2>💰 <span id="cur-title">العملة - الأوقية</span></h2><div class="grid">
-<div class="badge"><strong>1$ = 40 أوقية</strong><span id="cur1">سعر تقريبي</span></div>
-<div class="badge"><strong>1€ = 43 أوقية</strong><span id="cur2">سعر تقريبي</span></div>
-<div class="badge"><strong id="cur3">الدفع نقداً وكاش</strong><span id="cur3d">البطاقات محدودة</span></div>
+<div class="card"><h2>💰 <span id="cur-title">العملة - الأوقية</span></h2>
+<div class="grid">
+<div class="badge"><strong>1$ = 40 أوقية MRU</strong><span id="cur1">سعر تقريبي</span></div>
+<div class="badge"><strong>1€ = 43 أوقية MRU</strong><span id="cur2">سعر تقريبي</span></div>
+<div class="badge"><strong id="cur3">الدفع نقداً</strong><span id="cur3d">البطاقات محدودة خارج العاصمة</span></div>
 </div></div>
 
-<div class="card"><h2>✈️ <span id="air-title">المطار</span></h2><div class="grid">
+<div class="card"><h2>✈️ <span id="air-title">المطار</span></h2>
+<div class="grid">
 <div class="badge"><strong id="air1">مطار نواكشوط أم التونسي</strong><span id="air1d">NKC - دولي</span></div>
 <div class="badge"><strong id="air2">مطار نواذيبو</strong><span id="air2d">NDB - داخلي ودولي</span></div>
 <div class="badge"><strong id="air3">رحلات يومية</strong><span id="air3d">باريس - اسطنبول - كازا - داكار</span></div>
 </div></div>
 
-<div class="card"><h2>🍽️ <span id="rest-title">المطاعم</span></h2><div class="grid">
+<div class="card"><h2>🍽️ <span id="rest-title">المطاعم</span></h2>
+<div class="grid">
 <div class="badge"><strong id="r1">مطعم السمك نواكشوط</strong><span id="r1d">أسماك طازجة يومياً</span></div>
 <div class="badge"><strong id="r2">مطعم الخيمة التقليدي</strong><span id="r2d">لحم مشوي وكسكس</span></div>
-<div class="badge"><strong id="r3">مطعم الصحراء أطار</strong><span id="r3d">أكلات آدرار</span></div>
+<div class="badge"><strong id="r3">مطعم الصحراء أطار</strong><span id="r3d">أكلات آدرار الأصيلة</span></div>
 </div></div>
 
-<div class="card"><h2>🏥 <span id="hos-title">المستشفى والطوارئ</span></h2><div class="grid">
+<div class="card"><h2>🏥 <span id="hos-title">المستشفى والطوارئ</span></h2>
+<div class="grid">
 <div class="badge"><strong id="hos1">مستشفى القلب نواكشوط</strong><span id="hos1d">أكبر مستشفى</span></div>
 <div class="badge"><strong id="hos2">رقم الطوارئ: 115</strong><span id="hos2d">إسعاف - شرطة</span></div>
 <div class="badge"><strong id="hos3">صيدليات 24/24</strong><span id="hos3d">متوفرة في العاصمة</span></div>
 </div></div>
 
-<div class="card" style="text-align:center"><p id="footer">© 2026 موريتانيا سياحة V25 - محفوظ دحاني 🇲🇷</p></div>
+<div class="card" style="text-align:center"><p id="footer">© 2026 موريتانيا سياحة V26 - محفوظ دحاني 🇲🇷</p></div>
 </div>
 
 <script>
 const trans={
 ar:{
-dir:"rtl",title:"🇲🇷 V25 موريتانيا سياحة",welcome:"أهلاً وسهلاً بكم في موريتانيا - أرض المليون شاعر",
-cTitle:"🔥 العداد المميز",today:"اليوم:",online:"متصل:",timeMr:"وقت موريتانيا",timeOut:"الوقت الخارجي",date:"التاريخ",city:"المدينة",country:"الدولة",
+dir:"rtl",title:"🇲🇷 V26 موريتانيا سياحة",welcome:"أهلاً وسهلاً بكم في موريتانيا - أرض المليون شاعر",
+cTitle:"🔥 العداد المميز",today:"اليوم:",online:"متصل:",from:"نواكشوط",timeMr:"وقت موريتانيا",timeOut:"الوقت الخارجي (باريس)",date:"التاريخ",city:"المدينة",country:"الدولة",
 wTitle:"الجو والطقس",w1:"نواكشوط 28° ☀️",w1d:"مشمس - رطب",w2:"أطار 35° 🌵",w2d:"صحراوي حار نهاراً",w3:"نواذيبو 24° 🌊",w3d:"معتدل - رياح",
-places:"المدن السياحية",p1:"شنقيط",p1d:"مدينة التراث العالمي",p2:"وادان",p2d:"قلعة الصحراء التاريخية",p3:"تيرجيت",p3d:"واحة العيون والنخيل",p4:"بنك آرغين",p4d:"محمية الطيور العالمية",p5:"أطار",p5d:"بوابة آدرار",p6:"نواذيبو",p6d:"عاصمة الأسماك",
-curTitle:"العملة - الأوقية",cur1:"سعر تقريبي",cur2:"سعر تقريبي",cur3:"الدفع نقداً وكاش",cur3d:"البطاقات محدودة",
+places:"المدن السياحية",p1:"شنقيط",p1d:"مدينة التراث العالمي",p2:"وادان",p2d:"قلعة الصحراء التاريخية",p3:"تيرجيت",p3d:"واحة العيون والنخيل",p4:"بنك آرغين",p4d:"محمية الطيور العالمية",p5:"أطار",p5d:"بوابة آدرار",p6:"نواذيبو",p6d:"عاصمة الأسماك والشواطئ",
+curTitle:"العملة - الأوقية",cur1:"سعر تقريبي",cur2:"سعر تقريبي",cur3:"الدفع نقداً",cur3d:"البطاقات محدودة خارج العاصمة",
 airTitle:"المطار",air1:"مطار نواكشوط أم التونسي",air1d:"NKC - دولي",air2:"مطار نواذيبو",air2d:"NDB - داخلي ودولي",air3:"رحلات يومية",air3d:"باريس - اسطنبول - كازا - داكار",
-restTitle:"المطاعم",r1:"مطعم السمك نواكشوط",r1d:"أسماك طازجة يومياً",r2:"مطعم الخيمة التقليدي",r2d:"لحم مشوي وكسكس",r3:"مطعم الصحراء أطار",r3d:"أكلات آدرار",
+restTitle:"المطاعم",r1:"مطعم السمك نواكشوط",r1d:"أسماك طازجة يومياً",r2:"مطعم الخيمة التقليدي",r2d:"لحم مشوي وكسكس",r3:"مطعم الصحراء أطار",r3d:"أكلات آدرار الأصيلة",
 hosTitle:"المستشفى والطوارئ",hos1:"مستشفى القلب نواكشوط",hos1d:"أكبر مستشفى",hos2:"رقم الطوارئ: 115",hos2d:"إسعاف - شرطة",hos3:"صيدليات 24/24",hos3d:"متوفرة في العاصمة",
-footer:"© 2026 موريتانيا سياحة V25 - محفوظ دحاني 🇲🇷"
+footer:"© 2026 موريتانيا سياحة V26 - محفوظ دحاني 🇲🇷"
 },
 en:{
-dir:"ltr",title:"🇲🇷 V25 Visit Mauritania",welcome:"Welcome to Mauritania - Land of a Million Poets",
-cTitle:"🔥 Premium Counter",today:"Today:",online:"Online:",timeMr:"Mauritania Time",timeOut:"Outside Time",date:"Date",city:"City",country:"Country",
+dir:"ltr",title:"🇲🇷 V26 Visit Mauritania",welcome:"Welcome to Mauritania - Land of a Million Poets",
+cTitle:"🔥 Premium Counter",today:"Today:",online:"Online:",from:"Nouakchott",timeMr:"Mauritania Time",timeOut:"Outside Time (Paris)",date:"Date",city:"City",country:"Country",
 wTitle:"Weather",w1:"Nouakchott 28° ☀️",w1d:"Sunny - Humid",w2:"Atar 35° 🌵",w2d:"Hot desert by day",w3:"Nouadhibou 24° 🌊",w3d:"Mild - Windy",
-places:"Tourist Cities",p1:"Chinguetti",p1d:"World Heritage City",p2:"Ouadane",p2d:"Historic Desert Fortress",p3:"Terjit",p3d:"Oasis with springs & palms",p4:"Banc d'Arguin",p4d:"World Bird Sanctuary",p5:"Atar",p5d:"Gateway to Adrar",p6:"Nouadhibou",p6d:"Fish Capital",
-curTitle:"Currency - Ouguiya",cur1:"Approx. rate",cur2:"Approx. rate",cur3:"Cash payment",cur3d:"Cards limited",
+places:"Tourist Cities",p1:"Chinguetti",p1d:"World Heritage City",p2:"Ouadane",p2d:"Historic Desert Fortress",p3:"Terjit",p3d:"Oasis with springs & palms",p4:"Banc d'Arguin",p4d:"World Bird Sanctuary",p5:"Atar",p5d:"Gateway to Adrar",p6:"Nouadhibou",p6d:"Fish Capital & Beaches",
+curTitle:"Currency - Ouguiya",cur1:"Approx. rate",cur2:"Approx. rate",cur3:"Cash Payment",cur3d:"Cards limited outside capital",
 airTitle:"Airport",air1:"Nouakchott Oumtounsy Airport",air1d:"NKC - International",air2:"Nouadhibou Airport",air2d:"NDB - Domestic & International",air3:"Daily Flights",air3d:"Paris - Istanbul - Casa - Dakar",
-restTitle:"Restaurants",r1:"Fish Restaurant Nouakchott",r1d:"Fresh fish daily",r2:"Traditional Khaima Restaurant",r2d:"Grilled meat & couscous",r3:"Desert Restaurant Atar",r3d:"Adrar dishes",
+restTitle:"Restaurants",r1:"Fish Restaurant Nouakchott",r1d:"Fresh fish daily",r2:"Traditional Khaima Restaurant",r2d:"Grilled meat & couscous",r3:"Desert Restaurant Atar",r3d:"Authentic Adrar dishes",
 hosTitle:"Hospital & Emergency",hos1:"Heart Hospital Nouakchott",hos1d:"Biggest hospital",hos2:"Emergency: 115",hos2d:"Ambulance - Police",hos3:"Pharmacies 24/24",hos3d:"Available in capital",
-footer:"© 2026 Visit Mauritania V25 - Mahfoudh Dahani 🇲🇷"
+footer:"© 2026 Visit Mauritania V26 - Mahfoudh Dahani 🇲🇷"
 }
 };
+
 function setLang(lang){
-localStorage.setItem('lang',lang);const t=trans[lang];
-document.documentElement.dir=t.dir;document.documentElement.lang=lang;
+localStorage.setItem('lang',lang);
+const t=trans[lang];
+document.documentElement.dir=t.dir;
+document.documentElement.lang=lang;
 document.getElementById('title').innerText=t.title;
 document.getElementById('welcome').innerText=t.welcome;
 document.getElementById('c-title').innerText=t.cTitle;
 document.getElementById('l-today').innerText=t.today;
 document.getElementById('l-online').innerText=t.online;
+document.getElementById('l-from').innerText=t.from;
 document.getElementById('l-time-mr').innerText=t.timeMr;
 document.getElementById('l-time-out').innerText=t.timeOut;
 document.getElementById('l-date').innerText=t.date;
@@ -159,18 +177,22 @@ document.querySelectorAll('.langs button').forEach(b=>b.classList.remove('active
 document.getElementById('btn-'+lang).classList.add('active');
 }
 setLang(localStorage.getItem('lang')||'ar');
-let v=parseInt(localStorage.getItem('visitsV25')||'1540');v+=Math.floor(Math.random()*2)+1;localStorage.setItem('visitsV25',v);
+
+// العداد المميز
+let v=parseInt(localStorage.getItem('visitsV26')||'1688');v+=Math.floor(Math.random()*3)+1;localStorage.setItem('visitsV26',v);
 let d=0;const el=document.getElementById('visitors');
 const it=setInterval(()=>{d+=Math.ceil((v-d)/8);el.innerText=d;if(d>=v){el.innerText=v;clearInterval(it);}},35);
-document.getElementById('today').innerText=Math.floor(Math.random()*25)+8;
+document.getElementById('today').innerText=Math.floor(Math.random()*30)+10;
 document.getElementById('online').innerText=Math.floor(Math.random()*6)+1;
+
 function updateTimes(){
 const now=new Date();
-document.getElementById('time-mr').innerText=now.toLocaleTimeString('ar-MR',{timeZone:'Africa/Nouakchott'});
+document.getElementById('time-mr').innerText=now.toLocaleTimeString('ar',{timeZone:'Africa/Nouakchott'});
 document.getElementById('time-out').innerText=now.toLocaleTimeString('en-GB',{timeZone:'Europe/Paris'});
-document.getElementById('date-now').innerText=now.toLocaleDateString('ar-MR',{timeZone:'Africa/Nouakchott'});
+document.getElementById('date-now').innerText=now.toLocaleDateString('ar-MR',{timeZone:'Africa/Nouakchott',weekday:'long',year:'numeric',month:'long',day:'numeric'});
 }
 updateTimes();setInterval(updateTimes,1000);
+
 fetch('https://ipapi.co/json/').then(r=>r.json()).then(d=>{
 document.getElementById('ip').innerText=d.ip||'...';
 document.getElementById('city').innerText=d.city||'Nouakchott';
