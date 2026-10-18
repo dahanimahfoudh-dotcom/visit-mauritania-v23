@@ -6,7 +6,7 @@
 <title>موريتانيا سياحة V23 🇲🇷</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui, -apple-system, sans-serif;background:#0f172a;color:white;min-height:100vh}
+body{font-family:system-ui,sans-serif;background:#0f172a;color:white;min-height:100vh}
 .header{background:#1e3a8a;padding:15px;text-align:center;position:sticky;top:0;z-index:10}
 .header h1{font-size:22px;margin-bottom:12px}
 .langs{display:flex;gap:10px;justify-content:center}
@@ -19,8 +19,7 @@ body{font-family:system-ui, -apple-system, sans-serif;background:#0f172a;color:w
 .badge{background:#0f172a;padding:10px;border-radius:10px;text-align:center;border:1px solid #334155}
 .badge span{display:block;color:#94a3b8;font-size:13px}
 .badge strong{font-size:18px;color:#38bdf8}
-a{color:#38bdf8;text-decoration:none}
-.hero{font-size:32px;text-align:center;padding:40px 10px;color:#38bdf8;font-weight:bold}
+.hero{font-size:28px;text-align:center;padding:40px 10px;color:#38bdf8;font-weight:bold}
 </style>
 </head>
 <body>
@@ -32,108 +31,50 @@ a{color:#38bdf8;text-decoration:none}
     <button onclick="setLang('fr')" id="btn-fr">Français</button>
   </div>
 </div>
-
 <div class="container">
   <div class="hero" id="welcome">أهلاً وسهلاً بكم في موريتانيا</div>
-
-  <div class="card">
-    <h2 id="info-title">📊 معلومات الزائر</h2>
-    <div class="grid">
-      <div class="badge"><span id="l-visitors">الزوار</span><strong id="visitors">1</strong></div>
-      <div class="badge"><span>IP</span><strong id="ip">...</strong></div>
-      <div class="badge"><span id="l-city">المدينة</span><strong id="city">...</strong></div>
-      <div class="badge"><span id="l-country">الدولة</span><strong id="country">...</strong></div>
-      <div class="badge"><span id="l-time">الوقت</span><strong id="time">...</strong></div>
-    </div>
-  </div>
-
-  <div class="card">
-    <h2 id="about-title">🏜️ عن موريتانيا</h2>
-    <p id="about-text">موريتانيا بلد الجمال الطبيعي، الصحراء الشاسعة، الشواطئ البكر، ومدن التراث مثل شنقيط ووادان. تعال واكتشف سحر الصحراء وثقافة الضيافة الموريتانية الأصيلة.</p>
-  </div>
-
-  <div class="card">
-    <h2 id="places-title">📍 أماكن سياحية</h2>
-    <div class="grid">
-      <div class="badge"><strong id="p1">شنقيط</strong><span id="p1d">مدينة التراث العالمي</span></div>
-      <div class="badge"><strong id="p2">بنك آرغين</strong><span id="p2d">محمية الطيور العالمية</span></div>
-      <div class="badge"><strong id="p3">أطار</strong><span id="p3d">بوابة الصحراء</span></div>
-      <div class="badge"><strong id="p4">نواكشوط</strong><span id="p4d">العاصمة والشاطئ</span></div>
-    </div>
-  </div>
-
-  <div class="card" style="text-align:center">
-    <p id="footer">© 2026 موريتانيا سياحة - صنع بحب بواسطة محفوظ</p>
-  </div>
+  <div class="card"><h2 id="info-title">📊 معلومات الزائر</h2><div class="grid"><div class="badge"><span id="l-visitors">الزوار</span><strong id="visitors">1</strong></div><div class="badge"><span>IP</span><strong id="ip">...</strong></div><div class="badge"><span id="l-city">المدينة</span><strong id="city">...</strong></div><div class="badge"><span id="l-country">الدولة</span><strong id="country">...</strong></div><div class="badge"><span id="l-time">الوقت</span><strong id="time">...</strong></div></div></div>
+  <div class="card"><h2 id="about-title">🏜️ عن موريتانيا</h2><p id="about-text">موريتانيا بلد الجمال الطبيعي، الصحراء الشاسعة، الشواطئ البكر، ومدن التراث مثل شنقيط ووادان.</p></div>
+  <div class="card"><h2 id="places-title">📍 أماكن سياحية</h2><div class="grid"><div class="badge"><strong id="p1">شنقيط</strong><span id="p1d">مدينة التراث العالمي</span></div><div class="badge"><strong id="p2">بنك آرغين</strong><span id="p2d">محمية الطيور العالمية</span></div><div class="badge"><strong id="p3">أطار</strong><span id="p3d">بوابة الصحراء</span></div><div class="badge"><strong id="p4">نواكشوط</strong><span id="p4d">العاصمة والشاطئ</span></div></div></div>
+  <div class="card" style="text-align:center"><p id="footer">© 2026 موريتانيا سياحة - صنع بحب بواسطة محفوظ</p></div>
 </div>
-
 <script>
-const trans = {
-  ar: {
-    dir:"rtl", title:"🇲🇷 موريتانيا سياحة V23",
-    welcome:"أهلاً وسهلاً بكم في موريتانيا",
-    info:"📊 معلومات الزائر", visitors:"الزوار", city:"المدينة", country:"الدولة", time:"الوقت",
-    aboutTitle:"🏜️ عن موريتانيا",
-    about:"موريتانيا بلد الجمال الطبيعي، الصحراء الشاسعة، الشواطئ البكر، ومدن التراث مثل شنقيط ووادان. تعال واكتشف سحر الصحراء وثقافة الضيافة الموريتانية الأصيلة.",
-    places:"📍 أماكن سياحية", p1:"شنقيط", p1d:"مدينة التراث العالمي", p2:"بنك آرغين", p2d:"محمية الطيور العالمية", p3:"أطار", p3d:"بوابة الصحراء", p4:"نواكشوط", p4d:"العاصمة والشاطئ",
-    footer:"© 2026 موريتانيا سياحة - صنع بحب بواسطة محفوظ"
-  },
-  en: {
-    dir:"ltr", title:"🇲🇷 Visit Mauritania V23",
-    welcome:"Welcome to Mauritania",
-    info:"📊 Visitor Info", visitors:"Visitors", city:"City", country:"Country", time:"Time",
-    aboutTitle:"🏜️ About Mauritania",
-    about:"Mauritania is a land of natural beauty, vast desert, pristine beaches and heritage cities like Chinguetti and Ouadane. Come discover the magic of the desert and authentic Mauritanian hospitality.",
-    places:"📍 Tourist Places", p1:"Chinguetti", p1d:"World Heritage City", p2:"Banc d'Arguin", p2d:"World Bird Sanctuary", p3:"Atar", p3d:"Gateway to Desert", p4:"Nouakchott", p4d:"Capital & Beach",
-    footer:"© 2026 Visit Mauritania - Made with love by Mahfoudh"
-  },
-  fr: {
-    dir:"ltr", title:"🇲🇷 Visitez la Mauritanie V23",
-    welcome:"Bienvenue en Mauritanie",
-    info:"📊 Infos Visiteur", visitors:"Visiteurs", city:"Ville", country:"Pays", time:"Heure",
-    aboutTitle:"🏜️ À propos de la Mauritanie",
-    about:"La Mauritanie est un pays de beauté naturelle, vaste désert, plages vierges et villes patrimoniales comme Chinguetti et Ouadane. Venez découvrir la magie du désert et l'hospitalité mauritanienne authentique.",
-    places:"📍 Lieux Touristiques", p1:"Chinguetti", p1d:"Ville du Patrimoine Mondial", p2:"Banc d'Arguin", p2d:"Sanctuaire Mondial des Oiseaux", p3:"Atar", p3d:"Porte du Désert", p4:"Nouakchott", p4d:"Capitale & Plage",
-    footer:"© 2026 Visitez la Mauritanie - Fait avec amour par Mahfoudh"
-  }
+const trans={
+ar:{dir:"rtl",title:"🇲🇷 موريتانيا سياحة V23",welcome:"أهلاً وسهلاً بكم في موريتانيا",info:"📊 معلومات الزائر",visitors:"الزوار",city:"المدينة",country:"الدولة",time:"الوقت",aboutTitle:"🏜️ عن موريتانيا",about:"موريتانيا بلد الجمال الطبيعي، الصحراء الشاسعة، الشواطئ البكر، ومدن التراث مثل شنقيط ووادان. تعال واكتشف سحر الصحراء وثقافة الضيافة الموريتانية الأصيلة.",places:"📍 أماكن سياحية",p1:"شنقيط",p1d:"مدينة التراث العالمي",p2:"بنك آرغين",p2d:"محمية الطيور العالمية",p3:"أطار",p3d:"بوابة الصحراء",p4:"نواكشوط",p4d:"العاصمة والشاطئ",footer:"© 2026 موريتانيا سياحة - صنع بحب بواسطة محفوظ"},
+en:{dir:"ltr",title:"🇲🇷 Visit Mauritania V23",welcome:"Welcome to Mauritania",info:"📊 Visitor Info",visitors:"Visitors",city:"City",country:"Country",time:"Time",aboutTitle:"🏜️ About Mauritania",about:"Mauritania is a land of natural beauty, vast desert, pristine beaches and heritage cities like Chinguetti and Ouadane.",places:"📍 Tourist Places",p1:"Chinguetti",p1d:"World Heritage City",p2:"Banc d'Arguin",p2d:"World Bird Sanctuary",p3:"Atar",p3d:"Gateway to Desert",p4:"Nouakchott",p4d:"Capital & Beach",footer:"© 2026 Visit Mauritania - Made with love by Mahfoudh"},
+fr:{dir:"ltr",title:"🇲🇷 Visitez la Mauritanie V23",welcome:"Bienvenue en Mauritanie",info:"📊 Infos Visiteur",visitors:"Visiteurs",city:"Ville",country:"Pays",time:"Heure",aboutTitle:"🏜️ À propos de la Mauritanie",about:"La Mauritanie est un pays de beauté naturelle, vaste désert, plages vierges et villes patrimoniales comme Chinguetti et Ouadane.",places:"📍 Lieux Touristiques",p1:"Chinguetti",p1d:"Ville du Patrimoine Mondial",p2:"Banc d'Arguin",p2d:"Sanctuaire Mondial des Oiseaux",p3:"Atar",p3d:"Porte du Désert",p4:"Nouakchott",p4d:"Capitale & Plage",footer:"© 2026 Visitez la Mauritanie - Fait avec amour par Mahfoudh"}
 };
-
 function setLang(lang){
   localStorage.setItem('lang',lang);
-  const t = trans[lang];
-  document.documentElement.dir = t.dir;
-  document.documentElement.lang = lang;
-  document.getElementById('title').innerText = t.title;
-  document.getElementById('welcome').innerText = t.welcome;
-  document.getElementById('info-title').innerText = t.info;
-  document.getElementById('l-visitors').innerText = t.visitors;
-  document.getElementById('l-city').innerText = t.city;
-  document.getElementById('l-country').innerText = t.country;
-  document.getElementById('l-time').innerText = t.time;
-  document.getElementById('about-title').innerText = t.aboutTitle;
-  document.getElementById('about-text').innerText = t.about;
-  document.getElementById('places-title').innerText = t.places;
-  document.getElementById('p1').innerText = t.p1; document.getElementById('p1d').innerText = t.p1d;
-  document.getElementById('p2').innerText = t.p2; document.getElementById('p2d').innerText = t.p2d;
-  document.getElementById('p3').innerText = t.p3; document.getElementById('p3d').innerText = t.p3d;
-  document.getElementById('p4').innerText = t.p4; document.getElementById('p4d').innerText = t.p4d;
-  document.getElementById('footer').innerText = t.footer;
+  const t=trans[lang];
+  document.documentElement.dir=t.dir;
+  document.documentElement.lang=lang;
+  document.getElementById('title').innerText=t.title;
+  document.getElementById('welcome').innerText=t.welcome;
+  document.getElementById('info-title').innerText=t.info;
+  document.getElementById('l-visitors').innerText=t.visitors;
+  document.getElementById('l-city').innerText=t.city;
+  document.getElementById('l-country').innerText=t.country;
+  document.getElementById('l-time').innerText=t.time;
+  document.getElementById('about-title').innerText=t.aboutTitle;
+  document.getElementById('about-text').innerText=t.about;
+  document.getElementById('places-title').innerText=t.places;
+  document.getElementById('p1').innerText=t.p1;document.getElementById('p1d').innerText=t.p1d;
+  document.getElementById('p2').innerText=t.p2;document.getElementById('p2d').innerText=t.p2d;
+  document.getElementById('p3').innerText=t.p3;document.getElementById('p3d').innerText=t.p3d;
+  document.getElementById('p4').innerText=t.p4;document.getElementById('p4d').innerText=t.p4d;
+  document.getElementById('footer').innerText=t.footer;
   document.querySelectorAll('.langs button').forEach(b=>b.classList.remove('active'));
   document.getElementById('btn-'+lang).classList.add('active');
 }
-
-// تحميل اللغة المحفوظة
 setLang(localStorage.getItem('lang')||'ar');
-
-// معلومات الزائر
-let v = localStorage.getItem('visits')||0; v++; localStorage.setItem('visits',v);
-document.getElementById('visitors').innerText = v;
-document.getElementById('time').innerText = new Date().toLocaleString();
-
+let v=localStorage.getItem('visits')||0;v++;localStorage.setItem('visits',v);
+document.getElementById('visitors').innerText=v;
+document.getElementById('time').innerText=new Date().toLocaleString();
 fetch('https://ipapi.co/json/').then(r=>r.json()).then(d=>{
-  document.getElementById('ip').innerText = d.ip||'...';
-  document.getElementById('city').innerText = d.city||'...';
-  document.getElementById('country').innerText = d.country_name||'...';
+  document.getElementById('ip').innerText=d.ip||'...';
+  document.getElementById('city').innerText=d.city||'...';
+  document.getElementById('country').innerText=d.country_name||'...';
 }).catch(()=>{});
 </script>
 </body>
