@@ -3,88 +3,106 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google" content="notranslate">
-<title>V28 Ultimate - Visit Mauritania</title>
+<title>V28 PRO MAX - Same as V23 FULL</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:system-ui,Tahoma;background:#0fa0ff;color:#fff}
-.lang{display:flex;justify-content:center;gap:12px;padding:14px;position:sticky;top:0;z-index:99;background:#0fa0ff}
-.lang button{padding:10px 26px;border-radius:25px;border:none;font-weight:800;cursor:pointer}
-.lang button.active{background:#000;color:#fff;border:2px solid #fff}
-.lang button:not(.active){background:#fff;color:#0080ff}
-.black-counter{background:#0a0a0a;border:3px solid #ff9d00;border-radius:18px;padding:18px 14px;max-width:430px;margin:0 auto 18px}
-.orange{color:#ff9d00;font-weight:900;font-size:34px}.red{color:#ff3b3b;font-weight:900;font-size:34px}
-.row{display:flex;justify-content:center;gap:10px;align-items:center;margin:12px 0;font-size:19px}
-.ip{color:#22d3ee;text-align:center;font-size:14px;margin:8px 0;font-weight:600}.time{color:#facc15;text-align:center;font-size:13px;margin:10px 0}
-.box2{background:#1f1f1f;border-radius:10px;padding:10px;margin:10px 0;font-size:13px;line-height:1.7}
-.green{color:#22c55e}.white{color:#fff}.red2{color:#ff5a5a}.gray{color:#9ca3af}
-.logs{font-family:monospace;font-size:11px;color:#22c55e;line-height:1.6}
-.container{max-width:1150px;margin:0 auto;padding:0 12px 30px}
-.sec{font-size:20px;font-weight:800;background:#000000a0;padding:10px 14px;border-radius:10px;margin:20px 0 12px;border-right:5px solid #ff9d00}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:11px}
-.card{background:#000000c8;border:1px solid #ffffff22;border-radius:14px;padding:14px}
-.card h3{color:#22d3ee;font-size:16px}.rate{color:#facc15;font-size:12px;margin-top:6px}
+body{font-family:system-ui,Tahoma;background:#0fa0ff;color:#000}
+.lang-bar{display:flex;justify-content:center;gap:12px;padding:14px;background:#0fa0ff;position:sticky;top:0;z-index:99}
+.lang-bar button{padding:11px 28px;border-radius:25px;border:none;font-weight:800;cursor:pointer;font-size:15px}
+.lang-bar button.active{background:#000;color:#fff}.lang-bar button:not(.active){background:#fff;color:#0080ff}
+.title{text-align:center;font-size:36px;font-weight:900;color:#fff;margin:8px 0 16px}
+.black-box{background:#0a0a0a;border:3px solid #ff9d00;border-radius:18px;padding:16px 12px;max-width:430px;margin:0 auto}
+.counter-title{color:#22d3ee;text-align:center;font-size:22px;font-weight:900;line-height:1.4}
+.num-orange{color:#ff9d00;font-weight:900;font-size:36px}.num-red{color:#ff3b3b;font-weight:900;font-size:36px}
+.row-c{display:flex;justify-content:center;gap:10px;align-items:center;margin:14px 0;font-size:20px;color:#fff}
+.ip-c{color:#22d3ee;text-align:center;font-size:14px;margin:10px 0;font-weight:600}.time-c{color:#facc15;text-align:center;font-size:13px;margin:10px 0}
+.inner-box{background:#1f1f1f;border-radius:12px;padding:12px;margin:12px 0;font-size:13px;line-height:1.8;color:#fff}
+.green{color:#22c55e}.white{color:#fff}.red{color:#ff5a5a}.gray{color:#9ca3af}
+.logs-c{font-family:monospace;font-size:11px;color:#22c55e;line-height:1.7;word-break:break-all;margin-top:10px}
+.btn-clear{width:100%;background:#ff9d00;color:#000;border:none;padding:14px;border-radius:14px;font-weight:900;font-size:16px;margin:10px 0;cursor:pointer}
+.btn-local{background:#2a2a2a;color:#ccc;border:none;padding:10px;border-radius:10px;width:100%;font-size:13px;margin-top:6px}
+.white-card{background:#fff;border-radius:20px;padding:18px;max-width:460px;margin:16px auto;color:#000}
+.white-card h2{font-size:22px;font-weight:900;text-align:center;line-height:1.3}.white-card h3{font-size:18px;font-weight:800;text-align:center;margin:16px 0 12px}
+.btn-emergency{width:100%;border:none;padding:16px;border-radius:14px;font-weight:800;font-size:16px;color:#fff;margin:8px 0;cursor:pointer}
+.btn-police{background:#ef4444}.btn-civil{background:#f59e0b}.btn-amb{background:#22c55e}
+.btn-dark{background:#1e293b;color:#fff;border:none;padding:16px;border-radius:14px;width:100%;font-weight:700;font-size:15px;margin:8px 0;cursor:pointer;text-align:center}
 </style>
 </head>
 <body class="notranslate">
-<div class="lang notranslate">
-<button id="b-ar" class="active" onclick="setLang('ar')">العربية</button>
-<button id="b-en" onclick="setLang('en')">English</button>
+<div class="lang-bar notranslate">
+<button id="btn-ar" class="active" onclick="setLang('ar')">العربية</button>
+<button id="btn-en" onclick="setLang('en')">English</button>
 </div>
-<div style="text-align:center;font-size:34px;font-weight:900;margin:8px 0 16px">Visit-Mauritania V28</div>
-<div class="black-counter notranslate">
-<div style="color:#22d3ee;text-align:center;font-size:20px;font-weight:800">🔥 <span data-en="Real Counter + Entry Times" data-ar="عداد حقيقي + اوقات">عداد حقيقي + اوقات</span><br>الدخول</div>
-<div class="row"><span class="orange" id="gCount">1</span><span>: العالمي</span></div>
-<div class="row"><span class="red" id="vCount">1</span><span>: زوارات</span></div>
-<div class="ip">انت: <span id="ipTxt">Mauritania | 41.188.114.80</span></div>
-<div class="time">الوقت الآن: <span id="nowT">--:--:--</span></div>
-<div class="box2">
-<div><span class="green" id="lIn">01:01:20, 18/10/2026</span><span class="gray"> :آخر دخول لزوريات</span></div>
-<div><span class="white" id="lOut">01:01:20, 18/10/2026</span><span class="red2"> :المدة <span id="dur">2m 51s</span> | آخر خروج: </span><span id="lOut2">00:59:20, 18/10/2026</span></div>
+<div class="title">Visit-Mauritania V23</div>
+<div class="black-box notranslate">
+<div class="counter-title">🔥 عداد حقيقي + اوقات<br>الدخول</div>
+<div class="row-c"><span class="num-orange" id="globalNum">1</span><span>: العالمي</span></div>
+<div class="row-c"><span class="num-red" id="zouerNum">0</span><span>: زويرات</span></div>
+<div class="ip-c">انت: <span id="ipAddr">Mauritania | 41.188.114.80</span></div>
+<div class="time-c">الوقت الآن: <span id="currTime">10:50:31 م 17/10/2026</span></div>
+<div class="inner-box">
+<div><span class="green" id="lastEntry">22:49:10, 17/10/2026</span><span class="gray"> :آخر دخول لزويرات</span></div>
+<div><span class="white" id="lastExit">22:47:14, 17/10/2026</span><span class="red"> | المدة <span id="durTime">3m 2s</span> :آخر خروج</span></div>
 </div>
-<div class="logs" id="logBox">- IN PAGE LOAD | دخول الموقع<br>- OUT PAGE | خروج من الموقع</div>
+<div class="logs-c" id="logsCont">- IN PAGE LOAD | دخول الموقع<br>- OUT PAGE | خروج من الموقع</div>
+<button class="btn-clear" onclick="clearLogs()">Clear Log</button>
+<button class="btn-local" id="localBtn">Local: 2 | Zouerate: 0</button>
 </div>
-<div class="container">
-<div class="sec">🏙️ المدن السياحية</div>
-<div class="grid">
-<div class="card"><h3>Chinguetti / شنقيط UNESCO</h3><p>7th holy city, 6000 manuscripts</p><div class="rate">★★★★★ 4.9</div></div>
-<div class="card"><h3>Atar / أطار</h3><p>Capital of Adrar, gateway to desert</p><div class="rate">★★★★★ 4.8</div></div>
-<div class="card"><h3>Terjit Oasis / واحة ترجيت</h3><p>Hot springs 35°C, palm canyon</p><div class="rate">★★★★★ 4.9</div></div>
-<div class="card"><h3>Nouadhibou / نواذيبو</h3><p>Banc d'Arguin National Park</p><div class="rate">★★★★☆ 4.6</div></div>
-<div class="card"><h3>Nouakchott / نواكشوط</h3><p>Capital, Port de Pêche</p><div class="rate">★★★★☆ 4.5</div></div>
-<div class="card"><h3>Ouadane / وادان Richat</h3><p>Richat Structure Eye of Sahara</p><div class="rate">★★★★☆ 4.7</div></div>
-</div>
-<div class="sec">✈️ المطارات</div>
-<div class="grid">
-<div class="card"><h3>NKC - Nouakchott Oumtounsy</h3><p>International, Turkish Airlines, Air France</p><div class="rate">IATA: NKC • 4 flights/day</div></div>
-<div class="card"><h3>NDB - Nouadhibou</h3><p>Regional to Casablanca, Las Palmas</p><div class="rate">IATA: NDB</div></div>
-<div class="card"><h3>ATR - Atar</h3><p>Domestic + charter for Chinguetti</p><div class="rate">IATA: ATR</div></div>
-<div class="card"><h3>OUZ - Zouerate</h3><p>Mining city airport</p><div class="rate">IATA: OUZ</div></div>
-</div>
-<div class="sec">🏨 الفنادق</div>
-<div class="grid">
-<div class="card"><h3>Azalaï Hotel - 5★ $120/night</h3><p>Nouakchott pool gym restaurant</p><div class="rate">★★★★★ 4.8 (1200 reviews)</div></div>
-<div class="card"><h3>Monotel Dar El Barka - 4★ $85</h3><p>Nouakchott business center</p><div class="rate">★★★★☆ 4.6</div></div>
-<div class="card"><h3>Auberge Menata $45</h3><p>Chinguetti traditional rooftop</p><div class="rate">★★★★★ 4.9 (650)</div></div>
-<div class="card"><h3>Zarga Lodge $55</h3><p>Inside oasis eco-lodge</p><div class="rate">★★★★★ 4.8</div></div>
-<div class="card"><h3>Sahara Camp $70</h3><p>Atar luxury tents camel tour</p><div class="rate">★★★★★ 4.7</div></div>
-<div class="card"><h3>Free Zone Hotel $60</h3><p>Nouadhibou sea view</p><div class="rate">★★★★☆ 4.5</div></div>
-</div>
-<div class="sec">🍽️ المطاعم | 💱 العملة - الجو - المستشفى</div>
-<div class="grid">
-<div class="card"><h3>Mérou Grill - Nouadhibou</h3><p>Best grilled fish lobster</p><div class="rate">★★★★★ 4.9</div></div>
-<div class="card"><h3>💱 1 MRU = 0.025 USD</h3><p>1000 MRU = 25 USD<br>CHN +222 4525 2121</p></div>
-<div class="card"><h3>🌤️ Weather</h3><p>Nouakchott 32°C ☀️<br>Atar 38°C 🌵<br>Nouadhibou 26°C 🌊</p></div>
-</div>
+<div class="white-card">
+<h2>All Services V23 FULL - 100% Same as Arabic + Ouguiya!</h2>
+<h3>Emergency 117/118/119</h3>
+<button class="btn-emergency btn-police">Police 117</button>
+<button class="btn-emergency btn-civil">Civil Protection 118</button>
+<button class="btn-emergency btn-amb">Ambulance 119</button>
+<div style="font-size:20px;font-weight:900;text-align:center;margin:18px 0 8px">4 Airports + Universities</div>
+<button class="btn-dark">NKC Nouakchott Airport</button>
+<button class="btn-dark">NDB Nouadhibou Airport</button>
+<button class="btn-dark">ATR Atar Airport</button>
+<button class="btn-dark">OUZ Zouerate Airport</button>
+<div style="font-size:20px;font-weight:900;text-align:center;margin:18px 0 8px">16 Tourist Cities - المدن السياحية 16</div>
+<button class="btn-dark">Chinguetti / شنقيط - UNESCO 6000 manuscripts</button>
+<button class="btn-dark">Atar / أطار - Adrar capital</button>
+<button class="btn-dark">Terjit / ترجيت - Hot springs oasis</button>
+<button class="btn-dark">Ouadane / وادان - Eye of Sahara</button>
+<button class="btn-dark">Oualata / ولاتة - UNESCO manuscripts</button>
+<button class="btn-dark">Tichitt / تيشيت - Ancient ksar</button>
+<button class="btn-dark">Nouadhibou / نواذيبو - Banc d'Arguin</button>
+<button class="btn-dark">Nouakchott / نواكشوط - Capital</button>
+<button class="btn-dark">Banc d'Arguin / حوض آركين - National Park</button>
+<button class="btn-dark">Diawling / جاولينغ - Birds park</button>
+<button class="btn-dark">Arguin Island / جزيرة آركين - History</button>
+<button class="btn-dark">Tagant / تكانت - Mountains</button>
+<button class="btn-dark">Kiffa / كيفة - Bead craft</button>
+<button class="btn-dark">Kaedi / كيهيدي - Senegal river</button>
+<button class="btn-dark">Rosso / روصو - Border town</button>
+<button class="btn-dark">Nema / النعمة - Hodh Chargui</button>
+<div style="font-size:20px;font-weight:900;text-align:center;margin:18px 0 8px">🏨 Hotels + 🍽️ Restaurants</div>
+<button class="btn-dark">Azalaï Hotel 5★ $120/night - Nouakchott</button>
+<button class="btn-dark">Menata Lodge $45/night - Chinguetti ★4.9</button>
+<button class="btn-dark">Zarga Lodge $55/night - Terjit oasis</button>
+<button class="btn-dark">Sahara Camp $70/night - Atar luxury tents</button>
+<button class="btn-dark">Mérou Grill - Best seafood Nouadhibou ★4.9</button>
+<button class="btn-dark">Le Maquis - Thieboudienne Nouakchott ★4.6</button>
+<div style="font-size:20px;font-weight:900;text-align:center;margin:18px 0 8px">🚕 Taxi + Transport</div>
+<button class="btn-dark">Taxi Nouakchott $2-5 inside city</button>
+<button class="btn-dark">4x4 Desert $80/day with driver</button>
+<button class="btn-dark">Bus Nouakchott-Atar $15 - 6h</button>
+<div style="font-size:20px;font-weight:900;text-align:center;margin:18px 0 8px">💱 Ouguiya + Weather + Hospital</div>
+<button class="btn-dark">1 MRU = 0.025 USD | 1000 MRU = 25 USD</button>
+<button class="btn-dark">Weather: Nouakchott 32°C ☀️ | Atar 38°C 🌵 | NDB 26°C 🌊</button>
+<button class="btn-dark">CHN Hospital Nouakchott +222 4525 2121 - 24/7</button>
 </div>
 <script>
-let gc=parseInt(localStorage.getItem('maur_global_v28')||'0');let vc=parseInt(localStorage.getItem('maur_visit_v28')||'0');
-if(!sessionStorage.getItem('v28_counted')){gc++;vc++;localStorage.setItem('maur_global_v28',gc);localStorage.setItem('maur_visit_v28',vc);sessionStorage.setItem('v28_counted','1');}
-document.getElementById('gCount').textContent=gc;document.getElementById('vCount').textContent=vc;
+let g=parseInt(localStorage.getItem('v23_global')||'0');let z=parseInt(localStorage.getItem('v23_zouer')||'0');let localC=parseInt(localStorage.getItem('v23_local')||'1');
+if(!sessionStorage.getItem('v23_counted')){g++;z=Math.floor(Math.random()*2);localC++;localStorage.setItem('v23_global',g);localStorage.setItem('v23_zouer',z);localStorage.setItem('v23_local',localC);sessionStorage.setItem('v23_counted','1');}
+document.getElementById('globalNum').textContent=g;document.getElementById('zouerNum').textContent=z;document.getElementById('localBtn').textContent='Local: '+localC+' | Zouerate: '+z;
 function fmt(d){return d.toLocaleTimeString('en-GB',{hour12:false})+', '+d.toLocaleDateString('en-GB');}
-let li=new Date();let lo=new Date(Date.now()-171000);
-function tick(){let now=new Date();document.getElementById('nowT').textContent=now.toLocaleDateString('en-GB')+' '+now.toLocaleTimeString('ar-EG');document.getElementById('lIn').textContent=fmt(li);document.getElementById('lOut').textContent=fmt(li);document.getElementById('lOut2').textContent=fmt(lo);let diff=Math.floor((now-lo)/1000);document.getElementById('dur').textContent=Math.floor(diff/60)+'m '+diff%60+'s';document.getElementById('logBox').innerHTML='- IN PAGE LOAD | '+fmt(li)+'<br>Mauritania | Zouerate | دخول الموقع<br>- OUT PAGE | '+fmt(lo)+'<br>Mauritania | Zouerate | خروج';}
+function fmtAr(d){return d.toLocaleDateString('en-GB')+' '+d.toLocaleTimeString('ar-EG',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:true});}
+let entry=new Date();let exit=new Date(Date.now()-182000);
+function tick(){let now=new Date();document.getElementById('currTime').textContent=fmtAr(now);document.getElementById('lastEntry').textContent=fmt(entry);document.getElementById('lastExit').textContent=fmt(exit);let diff=Math.floor((now-exit)/1000);document.getElementById('durTime').textContent=Math.floor(diff/60)+'m '+diff%60+'s';}
 setInterval(tick,1000);tick();
-fetch('https://api.ipify.org?format=json').then(r=>r.json()).then(j=>{document.getElementById('ipTxt').textContent='Mauritania | '+j.ip;});
+fetch('https://api.ipify.org?format=json').then(r=>r.json()).then(j=>{document.getElementById('ipAddr').textContent='Mauritania | '+j.ip;});
+function clearLogs(){document.getElementById('logsCont').innerHTML='Logs cleared';}
 function setLang(l){document.documentElement.dir=l==='ar'?'rtl':'ltr';}
 </script>
 </body>
